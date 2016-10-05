@@ -69,5 +69,21 @@
       </axis>
     </joint-->
 
+    <include>
+      <uri>model://elikos_cam</uri>
+      <pose>-0.15 0 0.02 0 1.5708 0</pose>
+    </include>
+    <joint name="elikos_cam_joint" type="fixed">
+      <child>elikos_cam::elikos_cam_link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
   </model>
 </sdf>

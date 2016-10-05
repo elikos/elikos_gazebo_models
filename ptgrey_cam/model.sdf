@@ -48,7 +48,7 @@
         <mass>1e-06</mass>
         <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
-      <self_collide>0</<!--self_collide>
+      <!--<self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <sensor name='camera' type='camera'><!--
         <always_on>1</always_on>
@@ -71,7 +71,18 @@
           <updateRate>30.0</updateRate>
           <cameraName>elikos_ffmv_bottom_camera</cameraName>
           <imageTopicName>image_raw</imageTopicName>
-          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <cameraInfoTop<inertial>
+        <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1e-06</izz>
+        </inertia>
+        <mass>1e-06</mass>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+      </inertial>icName>camera_info</cameraInfoTopicName>
           <frameName>elikos_ffmv_bottom</frameName>
           <hackBaseline>0.07</hackBaseline>
           <distortionK1>0.0</distortionK1>
