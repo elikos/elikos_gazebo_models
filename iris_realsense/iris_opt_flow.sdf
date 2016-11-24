@@ -54,6 +54,38 @@
     </joint>
 
     <include>
+      <uri>model://Intel_R200_Right</uri>
+      <pose>0.15 -0.15 0 0 0 0</pose>
+    </include>
+    <joint name="r200_joint" type="fixed">
+      <child>Intel_R200_Right::link_1</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://Intel_R200_Left</uri>
+      <pose>0.15 0.15 0 0 0 0</pose>
+    </include>
+    <joint name="r200_joint" type="fixed">
+      <child>Intel_R200_Left::link_1</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
       <uri>model://elikos_cam</uri>
       <pose>-0.15 0 0.02 0 1.5708 0</pose>
     </include>

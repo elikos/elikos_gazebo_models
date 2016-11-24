@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name='Intel_R200'>
+  <model name='Intel_R200_2'>
     <link name='link_1'>
       <pose frame=''>-0.007 -0.065 -0 1.5708 -0 1.5708</pose>
       <inertial>
@@ -125,11 +125,6 @@
           <emissive>0 0 0 1</emissive>
           <shader type='vertex'>
             <normal_map>__default__</normal_map>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
           </shader>
         </material>
         <cast_shadows>1</cast_shadows>
@@ -181,9 +176,9 @@
           </contact>
         </surface>
       </collision> -->
-      <sensor name='r200_front' type='depth'>
+      <sensor name='r200_right' type='depth'>
         <update_rate>30</update_rate>
-        <camera name='r200_front'>
+        <camera name='r200_right'>
           <horizontal_fov>1.39626</horizontal_fov>
           <image>
             <width>640</width>
@@ -204,13 +199,13 @@
           <baseline>0.2</baseline>
           <alwaysOn>true</alwaysOn>
           <updateRate>1.0</updateRate>
-          <cameraName>r200_front</cameraName>
-          <imageTopicName>/r200_front/image_raw</imageTopicName>
-          <cameraInfoTopicName>/r200_front/camera_info</cameraInfoTopicName>
-          <depthImageTopicName>/r200_front/depth/image_raw</depthImageTopicName>
-          <depthImageCameraInfoTopicName>/r200_front/depth/camera_info</depthImageCameraInfoTopicName>
-          <pointCloudTopicName>/r200_front/depth/points</pointCloudTopicName>
-          <frameName>r200_front</frameName>
+          <cameraName>r200_right</cameraName>
+          <imageTopicName>/r200_right/image_raw</imageTopicName>
+          <cameraInfoTopicName>/r200_right/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>/r200_right/depth/image_raw</depthImageTopicName>
+          <depthImageCameraInfoTopicName>/r200_right/depth/camera_info</depthImageCameraInfoTopicName>
+          <pointCloudTopicName>/r200_right/depth/points</pointCloudTopicName>
+          <frameName>r200_right</frameName>
           <pointCloudCutoff>0.5</pointCloudCutoff>
           <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
           <distortionK1>0.0</distortionK1>
