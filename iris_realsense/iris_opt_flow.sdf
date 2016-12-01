@@ -39,7 +39,7 @@
 
     <include>
       <uri>model://Intel_R200</uri>
-      <pose>0.15 0 0 0 0 0</pose>
+      <pose>0.15 0 0 0 0.4712 0</pose>
     </include>
     <joint name="r200_joint" type="fixed">
       <child>Intel_R200::link_1</child>
@@ -55,9 +55,9 @@
 
     <include>
       <uri>model://Intel_R200_Right</uri>
-      <pose>0.15 -0.15 0 0 0 0</pose>
+      <pose>0 -0.15 0 0 0.4712 -1.5708</pose>
     </include>
-    <joint name="r200_joint" type="fixed">
+    <joint name="r200_right_joint" type="fixed">
       <child>Intel_R200_Right::link_1</child>
       <parent>iris::base_link</parent>
       <axis>
@@ -71,9 +71,9 @@
 
     <include>
       <uri>model://Intel_R200_Left</uri>
-      <pose>0.15 0.15 0 0 0 0</pose>
+      <pose>0 0.15 0 0 0.4712 1.5708</pose>
     </include>
-    <joint name="r200_joint" type="fixed">
+    <joint name="r200_left_joint" type="fixed">
       <child>Intel_R200_Left::link_1</child>
       <parent>iris::base_link</parent>
       <axis>
