@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="stadium">
+<!--
+    <include>
+      <uri>model://crai_floor</uri>
+    </include>
+-->
+    <include>
+      <uri>model://basketball_court</uri>
+    </include>
+<% size = 0.108 %>
+<% max_i = 1 %>
+<% max_j = 1 %>
+<% (0..max_i).each do |i| %>
+  <% (0..max_j).each do |j| %>
+      <light name='<%= "Light_0#{i+j*(max_j+1)}" %>' type='point'>
+        <pose frame=''><%= "#{-15.5 + ((j+1) * (13.5+15.5)/(max_j+2))}" %> <%= "#{19 - ((i+1) * (19+19.5)/(max_i+2))}" %> 10 0 0 0</pose>
+        <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+        <specular>0.0941176 0.0941176 0.0941176 1</specular>
+        <attenuation>
+          <range>60</range>
+          <constant>0.55</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>1</inner_angle>
+          <outer_angle>2.5</outer_angle>
+          <falloff>0</falloff>
+        </spot>
+        <direction>0 0 -1</direction>
+      </light>
+  <% end %>
+<% end %>
+
+  </world>
+</sdf>

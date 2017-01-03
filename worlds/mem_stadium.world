@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="stadium">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://crai_floor</uri>
+    </include>
+  </world>
+</sdf>
