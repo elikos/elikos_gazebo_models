@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="stadium">
+<!--
+    <include>
+      <uri>model://crai_floor</uri>
+    </include>
+-->
+    <include>
+      <uri>model://basketball_court</uri>
+    </include>
+
+
+
+
+  
+      <light name='Light_00' type='point'>
+        <pose frame=''>-5.833333333333334 6.166666666666666 10 0 0 0</pose>
+        <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+        <specular>0.0941176 0.0941176 0.0941176 1</specular>
+        <attenuation>
+          <range>60</range>
+          <constant>0.55</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>1</inner_angle>
+          <outer_angle>2.5</outer_angle>
+          <falloff>0</falloff>
+        </spot>
+        <direction>0 0 -1</direction>
+      </light>
+  
+      <light name='Light_02' type='point'>
+        <pose frame=''>3.833333333333332 6.166666666666666 10 0 0 0</pose>
+        <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+        <specular>0.0941176 0.0941176 0.0941176 1</specular>
+        <attenuation>
+          <range>60</range>
+          <constant>0.55</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>1</inner_angle>
+          <outer_angle>2.5</outer_angle>
+          <falloff>0</falloff>
+        </spot>
+        <direction>0 0 -1</direction>
+      </light>
+  
+
+  
+      <light name='Light_01' type='point'>
+        <pose frame=''>-5.833333333333334 -6.666666666666668 10 0 0 0</pose>
+        <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+        <specular>0.0941176 0.0941176 0.0941176 1</specular>
+        <attenuation>
+          <range>60</range>
+          <constant>0.55</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>1</inner_angle>
+          <outer_angle>2.5</outer_angle>
+          <falloff>0</falloff>
+        </spot>
+        <direction>0 0 -1</direction>
+      </light>
+  
+      <light name='Light_03' type='point'>
+        <pose frame=''>3.833333333333332 -6.666666666666668 10 0 0 0</pose>
+        <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+        <specular>0.0941176 0.0941176 0.0941176 1</specular>
+        <attenuation>
+          <range>60</range>
+          <constant>0.55</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <spot>
+          <inner_angle>1</inner_angle>
+          <outer_angle>2.5</outer_angle>
+          <falloff>0</falloff>
+        </spot>
+        <direction>0 0 -1</direction>
+      </light>
+  
+
+
+  </world>
+</sdf>

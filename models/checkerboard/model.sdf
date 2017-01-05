@@ -1,0 +1,1158 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="checkerboard">
+    <!--<static>true</static>-->
+    <link name="base">
+
+        <visual name="visual_block00">
+          <pose> 0.0 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block01">
+          <pose> 0.108 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block02">
+          <pose> 0.216 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block03">
+          <pose> 0.324 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block04">
+          <pose> 0.432 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block05">
+          <pose> 0.54 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block06">
+          <pose> 0.648 0.0 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block08">
+          <pose> 0.0 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block09">
+          <pose> 0.108 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block010">
+          <pose> 0.216 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block011">
+          <pose> 0.324 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block012">
+          <pose> 0.432 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block013">
+          <pose> 0.54 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block014">
+          <pose> 0.648 0.108 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block016">
+          <pose> 0.0 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block017">
+          <pose> 0.108 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block018">
+          <pose> 0.216 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block019">
+          <pose> 0.324 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block020">
+          <pose> 0.432 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block021">
+          <pose> 0.54 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block022">
+          <pose> 0.648 0.216 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block024">
+          <pose> 0.0 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block025">
+          <pose> 0.108 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block026">
+          <pose> 0.216 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block027">
+          <pose> 0.324 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block028">
+          <pose> 0.432 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block029">
+          <pose> 0.54 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block030">
+          <pose> 0.648 0.324 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block032">
+          <pose> 0.0 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block033">
+          <pose> 0.108 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block034">
+          <pose> 0.216 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block035">
+          <pose> 0.324 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block036">
+          <pose> 0.432 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block037">
+          <pose> 0.54 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block038">
+          <pose> 0.648 0.432 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block040">
+          <pose> 0.0 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block041">
+          <pose> 0.108 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block042">
+          <pose> 0.216 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block043">
+          <pose> 0.324 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block044">
+          <pose> 0.432 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block045">
+          <pose> 0.54 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block046">
+          <pose> 0.648 0.54 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block048">
+          <pose> 0.0 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block049">
+          <pose> 0.108 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block050">
+          <pose> 0.216 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block051">
+          <pose> 0.324 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block052">
+          <pose> 0.432 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block053">
+          <pose> 0.54 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block054">
+          <pose> 0.648 0.648 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block056">
+          <pose> 0.0 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block057">
+          <pose> 0.108 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block058">
+          <pose> 0.216 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block059">
+          <pose> 0.324 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block060">
+          <pose> 0.432 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block061">
+          <pose> 0.54 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block062">
+          <pose> 0.648 0.756 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block064">
+          <pose> 0.0 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block065">
+          <pose> 0.108 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block066">
+          <pose> 0.216 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block067">
+          <pose> 0.324 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block068">
+          <pose> 0.432 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block069">
+          <pose> 0.54 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/White
+              </name>
+            </script>
+          </material>
+        </visual>
+
+        <visual name="visual_block070">
+          <pose> 0.648 0.864 0.054 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> 0.108 0.108 0.108 </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                Gazebo/Black
+              </name>
+            </script>
+          </material>
+        </visual>
+
+    <collision name="collsion">
+      <pose> 0.324 0.432 0.054 0 0 0 </pose>
+      <geometry>
+        <box>
+          <size> 0.756 0.972 0.108 </size>
+        </box>
+      </geometry>
+    </collision>
+    </link>
+    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>base</robotBaseFrame>
+    </plugin>
+  </model>
+</sdf>

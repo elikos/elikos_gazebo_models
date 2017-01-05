@@ -1,0 +1,103 @@
+<sdf version='1.5'>
+  <model name='iris_opt_flow_r200'>
+
+    <include>
+      <uri>model://iris</uri>
+    </include>
+
+    <include>
+      <uri>model://lidar</uri>
+      <pose>0.0 0 0 0 3.1415 0</pose>
+    </include>
+    <joint name="lidar_joint" type="revolute">
+      <child>lidar::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://flow_cam</uri>
+      <pose>0.0 0.00 0 0 1.5708 1.5708</pose>
+    </include>
+    <joint name="flow_joint" type="revolute">
+      <child>camera::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://Intel_R200</uri>
+      <pose>0.15 0 0 0 0.4712 0</pose>
+    </include>
+    <joint name="r200_joint" type="fixed">
+      <child>Intel_R200::link_1</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://Intel_R200_Right</uri>
+      <pose>0 -0.15 0 0 0.4712 -1.5708</pose>
+    </include>
+    <joint name="r200_right_joint" type="fixed">
+      <child>Intel_R200_Right::link_1</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://Intel_R200_Left</uri>
+      <pose>0 0.15 0 0 0.4712 1.5708</pose>
+    </include>
+    <joint name="r200_left_joint" type="fixed">
+      <child>Intel_R200_Left::link_1</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+    <include>
+      <uri>model://elikos_cam</uri>
+      <pose>-0.15 0 0.02 0 1.5708 0</pose>
+    </include>
+    <joint name="elikos_cam_joint" type="fixed">
+      <child>elikos_cam::elikos_cam_link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+  </model>
+</sdf>

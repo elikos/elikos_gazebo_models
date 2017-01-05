@@ -1,0 +1,148 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='ptgrey_cam'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0.05 0 -0 0</pose>
+        <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1e-06</izz>
+        </inertia>
+        <mass>0.015</mass>
+      </inertial>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <gravity>1</gravity>
+      <visual name='visual_base'>
+        <pose frame=''>0 0 0.01 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.03 0.02</size>
+          </box>
+        </geometry>
+        <cast_shadows>0</cast_shadows>
+        <transparency>0</transparency>
+        <!-- <material>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material> -->
+      </visual>
+    </link>
+    <link name='camera_link'>
+      <pose frame=''>0.005 -0 0.01 0 -0 0</pose>
+      <inertial>
+        <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1e-06</izz>
+        </inertia>
+        <mass>1e-06</mass>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+      </inertial>
+      <!--<self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <sensor name='camera' type='camera'><!--
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>1</visualize>
+        <camera name='camera'>
+          <horizontal_fov>1.5708</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>BAYER_RGGB8</format>
+          </image>
+          <clip>
+            <near>0.01</near>
+            <far>40</far>
+          </clip>
+        </camera>
+        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>30.0</updateRate>
+          <cameraName>elikos_ffmv_bottom_camera</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTop<inertial>
+        <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1e-06</izz>
+        </inertia>
+        <mass>1e-06</mass>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+      </inertial>icName>camera_info</cameraInfoTopicName>
+          <frameName>elikos_ffmv_bottom</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+      <gravity>1</gravity>
+    </link>
+    <joint name='camera_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>camera_link</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <!-- <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit> -->
+        <!-- <dynamics>
+          <spring_reference>0</spring_reference><!--
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics> -->
+      </axis>
+      <!-- <physics>
+        <ode>
+          <cfm>0</cfm>
+          <bounce>0</bounce>
+          <velocity>0</velocity>
+          <fudge_factor>0</fudge_factor>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics> -->
+    </joint>
+    <static>0</static>
+    <!-- <allow_auto_disable>1</allow_auto_disable> -->
+    <!-- <plugin name='object_controller' filename='libgazebo_ros_planar_move.so'>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>base_link</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>base_link</robotBaseFrame>
+    </plugin>
+    <plugin name='camera_imu' filename='libgazebo_ros_imu.so'>
+      <bodyName>camera_link</bodyName>
+      <topicName>imu</topicName>
+      <updateRate>100.0</updateRate>
+    </plugin> -->
+  </model>
+</sdf>

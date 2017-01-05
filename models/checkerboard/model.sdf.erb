@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="checkerboard">
+    <!--<static>true</static>-->
+    <link name="base">
+<% size = 0.108 %><% max_i = 8 %><% max_j = 6 %><% size = 0.108 %><% (0..max_i).each do |i| %><% (0..max_j).each do |j| %>
+        <visual name="<%= "visual_block0#{j+i*max_i}" %>"> <!-- MISTAKE??? -->
+          <pose> <%= "#{j * size}" %> <%= "#{i * size}" %> <%= "#{size/2}" %> 0 0 0 </pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size> <%= "#{size}" %> <%= "#{size}" %> <%= "#{size}" %> </size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>
+                <%= if (i+(j*(max_j+1)))%2 == 0
+                   "Gazebo/Black"
+                else
+                   "Gazebo/White"
+                end %>
+              </name>
+            </script>
+          </material>
+        </visual>
+<% end %><% end %>
+    <collision name="collsion">
+      <pose> <%= "#{size*max_j/2}" %> <%= "#{size*max_i/2}" %> <%= "#{size/2}" %> 0 0 0 </pose>
+      <geometry>
+        <box>
+          <size> <%= "#{size*(max_j+1)}" %> <%= "#{size*(max_i+1)}" %> <%= "#{size}" %> </size>
+        </box>
+      </geometry>
+    </collision>
+    </link>
+    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>base</robotBaseFrame>
+    </plugin>
+  </model>
+</sdf>
