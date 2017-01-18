@@ -87,7 +87,7 @@
 
     <include>
       <uri>model://Intel_R200_Back</uri>
-      <pose>-0.15 0 0 0 0.4712 3.14159</pose>
+      <pose>-0.20 0 0 0 0.4712 3.14159</pose>
     </include>
     <joint name="r200_back_joint" type="fixed">
       <child>Intel_R200_Back::link_1</child>
