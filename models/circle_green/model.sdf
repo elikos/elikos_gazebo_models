@@ -21,10 +21,10 @@
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.140692</radius>
-            <length>0.0431889</length>
-          </cylinder>
+          <mesh>
+            <uri>model://circle_green/Ground_robot_green.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <material>
           <lighting>1</lighting>

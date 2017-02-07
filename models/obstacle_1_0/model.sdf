@@ -18,10 +18,10 @@
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.0457192</radius>
-            <length>1.0</length>
-          </cylinder>
+          <mesh>
+            <uri>model://obstacle_1_0/Obstacle_robot_1-0m.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <material>
           <lighting>1</lighting>

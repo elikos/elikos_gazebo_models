@@ -18,10 +18,10 @@
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.0457192</radius>
-            <length>0.75</length>
-          </cylinder>
+          <mesh>
+            <uri>model://obstacle_0_75/Obstacle_robot_0-5m.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <material>
           <lighting>1</lighting>
@@ -42,10 +42,10 @@
         <max_contacts>10</max_contacts>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.045719</radius>
-            <length>0.882249</length>
-          </cylinder>
+          <mesh>
+            <uri>model://obstacle_0_75/Ground_robot_green.STL</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <surface>
           <friction>
