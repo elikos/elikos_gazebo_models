@@ -22,7 +22,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://circle_red/Ground_robot_red.STL</uri>
+            <uri>model://circle_red/robot_red.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -34,10 +34,10 @@
         <max_contacts>10</max_contacts>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.155971</radius>
-            <length>0.064279</length>
-          </cylinder>
+          <mesh>
+            <uri>model://circle_red/robot_red.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <surface>
           <friction>

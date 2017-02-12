@@ -19,7 +19,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://obstacle_1_75/Obstacle_robot_1-5m.STL</uri>
+            <uri>model://obstacle_1_75/obs_15.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -31,10 +31,10 @@
         <max_contacts>10</max_contacts>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.045719</radius>
-            <length>0.882249</length>
-          </cylinder>
+          <mesh>
+            <uri>model://obstacle_1_75/obs_15.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <surface>
           <friction>

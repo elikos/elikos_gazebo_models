@@ -19,7 +19,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://obstacle_0_75/Obstacle_robot_0-5m.STL</uri>
+            <uri>model://obstacle_0_75/obs_05.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -32,7 +32,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://obstacle_0_75/Ground_robot_green.STL</uri>
+            <uri>model://obstacle_0_75/obs_05.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
