@@ -40,7 +40,7 @@
         <plugin name='camera_controller' filename='libgazebo_ros_openni_kinect.so'>
             <baseline>0.2</baseline>
             <alwaysOn>true</alwaysOn>
-            <updateRate>1.0</updateRate>
+            <updateRate>0</updateRate>
             <cameraName>elikos_ffmv_bottom_camera</cameraName>
             <imageTopicName>/elikos_ffmv_bottom_camera/image_raw</imageTopicName>
             <cameraInfoTopicName>/elikos_ffmv_bottom_camera/camera_info</cameraInfoTopicName>

@@ -203,7 +203,7 @@
         <plugin name='r200_controller' filename='libgazebo_ros_openni_kinect.so'>
           <baseline>0.2</baseline>
           <alwaysOn>true</alwaysOn>
-          <updateRate>1.0</updateRate>
+          <updateRate>0</updateRate>
           <cameraName>r200_front</cameraName>
           <imageTopicName>/r200_front/image_raw</imageTopicName>
           <cameraInfoTopicName>/r200_front/camera_info</cameraInfoTopicName>
