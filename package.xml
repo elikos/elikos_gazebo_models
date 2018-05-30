@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <name>elikos_gazebo_models</name>
+  <version>0.0.0</version>
+  <description>The elikos_gazebo_models package</description>
+
+  <maintainer email="bedard.christophe@gmail.com">christophebedard</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
